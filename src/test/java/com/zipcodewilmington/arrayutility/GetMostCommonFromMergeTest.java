@@ -42,8 +42,8 @@ public class GetMostCommonFromMergeTest {
     public void stringTest() {
         // Given
         String expected = "a";
-        String[] inputArray = {"1", "2", expected, "8", "4", "5", expected, "0", "9", "8", expected};
-        String[] arrayToMerge = {"1", "2", expected, "8", "4", "5", expected, "0", "9", "8", expected, expected};
+        String[] inputArray = {"1", "2", expected, expected, "4", "5", expected, "0", "9", "8", "8"};
+        String[] arrayToMerge = {expected, "2", expected, expected, "4", "5", expected, "0", expected, "8", "8", "8"};
 
         ArrayUtility<String> arrayUtility = new ArrayUtility<String>(inputArray);
 
